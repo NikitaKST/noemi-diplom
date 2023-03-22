@@ -1526,7 +1526,7 @@ a {
     }
 
     .search-input {
-        width: 278px;
+        width: calc(100% - 52px);
     }
 
     .send-button {
