@@ -297,7 +297,7 @@ a {
 }
 
 .article-img-link {
-    width: 381px;
+    max-width: 381px;
     margin-right: 30px;
 }
 
@@ -416,7 +416,7 @@ a {
 }
 
 .sidebar-post-img {
-    width: 70px;
+    max-width: 70px;
     margin-right: 20px;
 }
 
@@ -692,9 +692,10 @@ a {
     position: relative;
     z-index: -1;
     min-height: 206px;
-    min-width: 300px;
+    max-width: 300px;
     background-position: center;
-    background-size: cover;
+    /* background-size: cover; */
+    object-fit: cover;
 }
 
 .product-description {
@@ -848,7 +849,7 @@ a {
     justify-content: center;
     align-items: center;
 
-    display: none;       POPUP вкл/выкл
+    display: none;       /*POPUP вкл/выкл*/
 }
 
 .popup-container {
@@ -1264,7 +1265,8 @@ a {
     }
 
     .cards-img {
-        height: 230px;
+        min-height: 230px;
+        width: 100%;
         max-width: 291px;    
     }
 
@@ -1477,7 +1479,9 @@ a {
 
     .article-img-link {
         width: 100%;
-        margin-right: 0px;
+        margin-right: auto;
+        margin-left: auto;
+
         margin-bottom: 12px;    
     }
 
